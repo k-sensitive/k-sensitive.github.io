@@ -1,23 +1,27 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>(function(n,t,i,r){var u,f;n[i]=n[i]||{},n[i].initial={accountCode:"CMPNY22430",host:"CMPNY22430.pcapredict.com"},n[i].on=n[i].on||function(){(n[i].onq=n[i].onq||[]).push(arguments)},u=t.createElement("script"),u.async=!0,u.src=r,f=t.getElementsByTagName("script")[0],f.parentNode.insertBefore(u,f)})(window,document,"pca","//CMPNY22430.pcapredict.com/js/sensor.js")</script>
+  </head>
+<body>
 
-<div class="home">
+<h2>HTML Forms</h2>
 
-  <h1 class="page-heading">Posts</h1>
+<form>
+  <label for="addressline">Address Line:</label><br>
+  <input type="text" id="addressline" name="addressline"><br><br>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <label for="city">City:</label><br>
+  <input type="text" id="city" name="city"><br><br>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <label for="state">State:</label><br>
+  <input type="text" id="state" name="state"><br><br>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <label for="zipcode">Zipcode:</label><br>
+  <input type="text" id="zipcode" name="zipcode"><br><br>
 
-</div>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
